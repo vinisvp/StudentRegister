@@ -14,7 +14,7 @@
         <h1 class="display-5 text-center">Cadastro de Alunos</h1>
     </header>
     <main>
-        <div class="container">
+        <div class="container bg-white">
             <section> <!--Form-->
                 <h1 class="display-6">Formulário de Cadastro:</h1>
                 <form id="formStudent">
@@ -70,8 +70,34 @@
                 </form>
             </section>
             <hr>
-            <section> <!--Tabel-->
+            <section> <!--Table-->
                 <h1 class="display-6">Alunos Cadastrados:</h1>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col" class="d-none d-md-table-cell">Email</th>
+                                    <th scope="col" class="d-none d-md-table-cell">Telefone</th>
+                                    <th scope="col" class="d-none d-md-table-cell">Curso</th>
+                                    <th scope="col" class="d-none d-md-table-cell">Turno</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Pedro Antonio</td>
+                                    <td class="d-none d-md-table-cell">pedro@abutua.com</td>
+                                    <td class="d-none d-md-table-cell">(15) 9999-9999</td>
+                                    <td class="d-none d-md-table-cell">Angular</td>
+                                    <td class="d-none d-md-table-cell">Tarde</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
