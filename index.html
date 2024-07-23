@@ -17,6 +17,57 @@
         <div class="container">
             <section> <!--Form-->
                 <h1 class="display-6">Formulário de Cadastro:</h1>
+                <form id="formStudent">
+                    <div class="mb-3 row row-gap-3">
+                        <label for="inputName" class="col-1 offset-1 form-label">Nome:</label>
+                        <div class="col-9">
+                            <input type="text" class="form-control" id="inputName" required>
+                        </div>
+                        <label for="inputEmail" class="col-1 offset-1 form-label">Email:</label>
+                        <div class="col-4">
+                            <input type="email" class="form-control" id="inputEmail" required>
+                        </div>
+                        <label for="inputTel" class="col-1 form-label">Telefone:</label>
+                        <div class="col-4">
+                            <input type="text" class="form-control" id="inputTel" required>
+                        </div>
+                        <label for="inputCourse" class="col-1 offset-1 form-label">Curso:</label>
+                        <div class="col-4">
+                            <select class="form-select" aria-label="Seleção de Curso" id="inputCourse" required>
+                                <option value="1">Java</option>
+                                <option value="2">Angular</option>
+                                <option value="3">HTML/CSS</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label class="col-1 offset-1 form-label">Turno:</label>
+                            <div class="col-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="inputShift" id="1"
+                                        value="option1" checked required>
+                                    <label class="form-check-label" for="1">
+                                        Manhã
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="inputShift" id="2"
+                                        value="option2">
+                                    <label class="form-check-label" for="2">
+                                        Tarde
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="inputShift" id="3"
+                                        value="option3">
+                                    <label class="form-check-label" for="3">
+                                        Noite
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-1 offset-1">Cadastrar</button>
+                    </div>
+                </form>
             </section>
             <hr>
             <section> <!--Tabel-->
@@ -27,6 +78,9 @@
     <footer class="bg-secondary fixed-bottom text-center text-white">
         <p>@Sistemas P&D</p>
     </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
