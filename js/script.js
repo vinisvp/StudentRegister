@@ -19,22 +19,22 @@ function addStudentToTable(student){
 
     Node = document.createTextNode(student.email);
     var cell = newRow.insertCell();
-    cell.className = "d-none d-md-table-cell";
+    cell.className = "d-none d-lg-table-cell";
     cell.appendChild(Node);
 
     Node = document.createTextNode(student.phone);
     cell = newRow.insertCell();
-    cell.className = "d-none d-md-table-cell";
+    cell.className = "d-none d-lg-table-cell";
     cell.appendChild(Node);
 
     Node = document.createTextNode(course[student.course - 1]);
     cell = newRow.insertCell();
-    cell.className = "d-none d-md-table-cell";
+    cell.className = "d-none d-lg-table-cell";
     cell.appendChild(Node);
 
     Node = document.createTextNode(shift[student.shift - 1]);
     cell = newRow.insertCell();
-    cell.className = "d-none d-md-table-cell";
+    cell.className = "d-none d-lg-table-cell";
     cell.appendChild(Node);
 }
 
@@ -45,13 +45,12 @@ function showStudents(){
 }
 
 function addStudent(){
-    console.log("Executed")
     var shifts = document.getElementsByName("inputShift");
     var sh = 0;
     for(s of shifts){
         if (s.checked)
         {
-            sh = s.id;
+            sh = parseInt(s.id);
         }
     }
     
@@ -60,7 +59,7 @@ function addStudent(){
         name: document.getElementById("inputName").value,
         email: document.getElementById("inputEmail").value,
         phone: document.getElementById("inputTel").value,
-        course: document.getElementById("inputCourse").value,
+        course: parseInt(document.getElementById("inputCourse").value),
         shift: sh
     }
 

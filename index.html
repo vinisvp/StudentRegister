@@ -16,32 +16,32 @@
     <main>
         <div class="container bg-white">
             <section> <!--Form-->
-                <h1 class="display-6">Formulário de Cadastro:</h1>
+                <h1 class="display-6 my-3">Formulário de Cadastro:</h1>
                 <form onsubmit="addStudent(); return false" id="formStudent">
-                    <div class="mb-3 row row-gap-3">
-                        <label for="inputName" class="col-1 offset-1 form-label">Nome:</label>
-                        <div class="col-9">
+                    <div class="mb-3 row row-gap-lg-3">
+                        <label for="inputName" class="col-10 col-lg-1 offset-1 form-label">Nome:</label>
+                        <div class="col-10 col-lg-9 offset-lg-0 offset-1 mb-4 mb-lg-0">
                             <input type="text" class="form-control" id="inputName" required>
                         </div>
-                        <label for="inputEmail" class="col-1 offset-1 form-label">Email:</label>
-                        <div class="col-4">
+                        <label for="inputEmail" class="col-10 col-lg-1 offset-1 form-label">Email:</label>
+                        <div class="col-10 col-lg-4 offset-lg-0 offset-1 mb-4 mb-lg-0">
                             <input type="email" class="form-control" id="inputEmail" required>
                         </div>
-                        <label for="inputTel" class="col-1 form-label">Telefone:</label>
-                        <div class="col-4">
+                        <label for="inputTel" class="col-10 col-lg-1 offset-lg-0 offset-1 form-label">Telefone:</label>
+                        <div class="col-10 col-lg-4 offset-lg-0 offset-1 mb-4 mb-lg-0">
                             <input type="text" class="form-control" id="inputTel" required>
                         </div>
-                        <label for="inputCourse" class="col-1 offset-1 form-label">Curso:</label>
-                        <div class="col-4">
+                        <label for="inputCourse" class="col-10 col-lg-1 offset-1 form-label">Curso:</label>
+                        <div class="col-10 col-lg-4 offset-1 offset-lg-0 mb-4 mb-lg-0">
                             <select class="form-select" aria-label="Seleção de Curso" id="inputCourse" required>
                                 <option value="1">Java</option>
                                 <option value="2">Angular</option>
                                 <option value="3">HTML/CSS</option>
                             </select>
                         </div>
-                        <div class="row">
-                            <label class="col-1 offset-1 form-label">Turno:</label>
-                            <div class="col-1">
+                        <div class="row mb-3 mb-lg-0">
+                            <label class="col-10 col-lg-1 offset-1 form-label">Turno:</label>
+                            <div class="col-10 col-lg-1 offset-1 offset-lg-0">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="inputShift" id="1"
                                         value="option1" checked required>
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary col-1 offset-1">Cadastrar</button>
+                        <button type="submit" class="btn btn-primary col-3 col-lg-2 col-xl-1 offset-1">Cadastrar</button>
                     </div>
                 </form>
             </section>
@@ -79,10 +79,10 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Nome</th>
-                                    <th scope="col" class="d-none d-md-table-cell">Email</th>
-                                    <th scope="col" class="d-none d-md-table-cell">Telefone</th>
-                                    <th scope="col" class="d-none d-md-table-cell">Curso</th>
-                                    <th scope="col" class="d-none d-md-table-cell">Turno</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">Email</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">Telefone</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">Curso</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">Turno</th>
                                 </tr>
                             </thead>
                             <tbody>
