@@ -44,4 +44,29 @@ function showStudents(){
     }
 }
 
+function addStudent(){
+    console.log("Executed")
+    var shifts = document.getElementsByName("inputShift");
+    var sh = 0;
+    for(s of shifts){
+        if (s.checked)
+        {
+            sh = s.id;
+        }
+    }
+    
+    var student = {
+        id: students.length + 1,
+        name: document.getElementById("inputName").value,
+        email: document.getElementById("inputEmail").value,
+        phone: document.getElementById("inputTel").value,
+        course: document.getElementById("inputCourse").value,
+        shift: sh
+    }
+
+    document.getElementById("formStudent").reset();
+    students.push(student);
+    addStudentToTable(student);
+}
+
 showStudents();

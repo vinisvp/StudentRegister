@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="bg-light">
         <h1 class="display-5 text-center">Cadastro de Alunos</h1>
     </header>
     <main>
         <div class="container bg-white">
             <section> <!--Form-->
                 <h1 class="display-6">Formulário de Cadastro:</h1>
-                <form id="formStudent">
+                <form onsubmit="addStudent(); return false" id="formStudent">
                     <div class="mb-3 row row-gap-3">
                         <label for="inputName" class="col-1 offset-1 form-label">Nome:</label>
                         <div class="col-9">
@@ -93,8 +93,8 @@
             </section>
         </div>
     </main>
-    <footer class="bg-secondary fixed-bottom text-center text-white">
-        <p>@Sistemas P&D</p>
+    <footer class="bg-secondary text-center text-white fixed-bottom">
+        @Sistemas P&D
     </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
